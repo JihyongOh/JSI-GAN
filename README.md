@@ -1,5 +1,5 @@
 # JSI-GAN
-This is the official repository of JSI-GAN (AAAI2020).
+**This is the official repository of JSI-GAN (AAAI2020).**
 
 We provide the training and test code along with the trained weights and the dataset (train+test) used for JSI-GAN.
 Our paper was accepted at **AAAI 2020**.
