@@ -516,7 +516,7 @@ class Net(object):
                   % (int(index), int(data_sz[0]), (time.time() - start_time) / 60, test_PSNR))
 
             ###======== Save Predictions as Images ========###
-            # utils.save_results_yuv(test_pred_full, index, test_img_dir)  # comment for faster testing
+            utils.save_results_yuv(test_pred_full, index, test_img_dir)  # comment for faster testing
         test_PSNR_per_epoch = np.mean(test_loss_PSNR_list_for_epoch)
 
         print("######### Average Test PSNR: %.8f[dB]  #########" % (test_PSNR_per_epoch))
@@ -586,7 +586,7 @@ class Net(object):
                   % (int(index), int(len(data_path_test)//3), (time.time() - start_time) / 60, test_PSNR))
 
             ###======== Save Predictions as Images ========###
-            # utils.save_results_yuv(test_pred_full, index, test_img_dir)  # comment for faster testing
+            utils.save_results_yuv(test_pred_full, index, test_img_dir)  # comment for faster testing
         test_PSNR_per_epoch = np.mean(test_loss_PSNR_list_for_epoch)
 
         print("######### Average Test PSNR: %.8f[dB]  #########" % (test_PSNR_per_epoch))
