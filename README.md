@@ -14,6 +14,7 @@ Our code is implemented using Tensorflow, and was tested under the following set
 * CUDA 9.0  
 * cuDNN 7.1.4  
 * NVIDIA TITAN Xp GPU
+* Windows 10
 
 ## Test code
 ### Quick Start
