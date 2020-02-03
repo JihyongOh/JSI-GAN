@@ -20,7 +20,7 @@ Our code is implemented using Tensorflow, and was tested under the following set
 ### Quick Start
 1. Download the source code in a directory of your choice **\<source_path\>**.
 2. Download the test dataset from [this link](https://drive.google.com/file/d/1dZTwvRhf189L7NLkAcpij4980fyEXq3Q/view?usp=sharing) and unzip the 'test' folder in **\<source_path\>/data**.
-3. Download the pre-trained weights from [this link](). (**This link will be updated soon**)
+3. Download the pre-trained weights from [this link](https://drive.google.com/drive/folders/1WJLD_wCERHrY3CZty_ThHONB5sMmH-0j?usp=sharing) and place the folders in **\<source_path\>/checkpoint_dir**.
 4. Run **main.py** with the following options in parse_args:  
 **(i) For testing the .mat file input with scale factor 2:**  
 '--phase' as **'test_mat'**, '--scale_factor' as **2**, '--test_data_path_LR_SDR' as **'./data/test/testset_SDR_x2.mat'**, '--test_data_path_HR_HDR' as **'./data/test/testset_HDR.mat'**  
