@@ -56,4 +56,4 @@ Our code is implemented using Tensorflow, and was tested under the following set
 * **The training process can be monitored using Tensorboard.** The log directory for using Tensorboard is **\<source_path\>/logs**.
 
 ## Contact
-Please contact the authors via email (sooyekim@kaist.ac.kr or jhoh94@kaist.ac.kr) for any problems regarding the released code.
+Please contact us via email (sooyekim@kaist.ac.kr or jhoh94@kaist.ac.kr) for any problems regarding the released code.
