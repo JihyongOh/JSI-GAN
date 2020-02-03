@@ -8,9 +8,7 @@ If you find this repository useful, please consider citing our paper.
 > Soo Ye Kim*, Jihyong Oh*, and Munchurl Kim "JSI-GAN: GAN-Based Joint Super-Resolution and Inverse Tone-Mapping with Pixel-Wise Task-Specific Filters for UHD HDR Video", *Thirty-Fourth AAAI Conference on Artificial Intelligence*, 2020. (*equal contribution)
 
 ### Requirements
-Our code is implemented using Tensorflow.
-
-This code was tested under the following setting:  
+Our code is implemented using Tensorflow, and was tested under the following setting:  
 * Python 3.6  
 * Tensorflow 1.13 
 * CUDA 9.0  
