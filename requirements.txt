@@ -1,6 +1,6 @@
 h5py==2.10.0
 numpy==1.18.1
-tensorflow_gpu==1.13.1
+tensorflow_gpu==1.15.2
 imageio==2.6.1
 Pillow==7.0.0
 tensorflow==2.1.0
