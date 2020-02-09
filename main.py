@@ -1,3 +1,10 @@
+"""
+-------------------------------------------------------------------------------------------------------------
+<Official Tensorflow Code>
+Paper: "JSI-GAN: GAN-Based Joint Super-Resolution and Inverse Tone-Mapping with Pixel-Wise Task-Specific Filters for UHD HDR Video", AAAI2020
+Written by Soo Ye Kim and Jihyong Oh
+-------------------------------------------------------------------------------------------------------------
+"""
 from __future__ import print_function
 import argparse, os
 import tensorflow as tf
