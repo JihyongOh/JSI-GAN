@@ -28,7 +28,7 @@ def parse_args():
     """ Training Settings """
     parser.add_argument('--exp_num', type=int, default=1, help='The experiment number')
     parser.add_argument('--phase', type=str, default='train', choices=['train', 'test_mat', 'test_png'])
-    parser.add_argument('--scale_factor', type=float, default=2, help='scale_factor for SR')
+    parser.add_argument('--scale_factor', type=int, default=2, help='scale_factor for SR')
     # Set './data/train/SDR_youtube_80.mat' or './data/train/SDR_youtube_80_x4.mat' and './data/train/HDR_youtube_80.mat'
     parser.add_argument('--train_data_path_LR_SDR', type=str, default='./data/train/SDR_youtube_80.mat', help='Train input data path')
     parser.add_argument('--train_data_path_HR_HDR', type=str, default='./data/train/HDR_youtube_80.mat', help='Train GT data path')
