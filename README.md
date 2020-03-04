@@ -2,7 +2,7 @@
 **This is the official repository of JSI-GAN (AAAI2020).**
 
 We provide the training and test code along with the trained weights and the dataset (train+test) used for JSI-GAN.
-If you find this repository useful, please consider citing our paper.
+If you find this repository useful, please consider citing our [paper](https://arxiv.org/abs/1909.04391).
 
 **Reference**:  
 > Soo Ye Kim*, Jihyong Oh*, and Munchurl Kim "JSI-GAN: GAN-Based Joint Super-Resolution and Inverse Tone-Mapping with Pixel-Wise Task-Specific Filters for UHD HDR Video", *Thirty-Fourth AAAI Conference on Artificial Intelligence*, 2020. (* *equal contribution*)
