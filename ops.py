@@ -246,7 +246,7 @@ def dyn_sep_up_operation(x, Fv, Fh, k_sz, sf):
     out_v = tf.zeros([sz[0], sz[1], sz[2], sz[3] * sf ** 2])  # [B, H, W, C*sf*sf]
     out_h = tf.zeros([sz[0], sz[1], sz[2], sz[3] * sf ** 2])  # [B, H, W, C*sf*sf]
 
-    img_pad = tf.pad(x, tf.constant([[0, 0], [pad, pad], [0, 0], [0, 0]]))  # [B, H+pad, W+pad, C]
+    img_pad = tf.pad(x, tf.constant([[0, 0], [pad, pad], [0, 0], [0, 0]]))  # [B, H+2*pad, W, C]
     img_pad_y = tf.tile(tf.expand_dims(img_pad[:, :, :, 0], axis=3), [1, 1, 1, sf ** 2])
     img_pad_u = tf.tile(tf.expand_dims(img_pad[:, :, :, 1], axis=3), [1, 1, 1, sf ** 2])
     img_pad_v = tf.tile(tf.expand_dims(img_pad[:, :, :, 2], axis=3), [1, 1, 1, sf ** 2])
@@ -255,7 +255,7 @@ def dyn_sep_up_operation(x, Fv, Fh, k_sz, sf):
     # vertical 1D filter
     for i in range(k_sz):
         out_v = out_v + img_pad[:, i:i + sz[1], :, :] * tf.tile(Fv[:, :, :, i:k_sz * sf ** 2:k_sz], [1, 1, 1, 3])
-    img_pad = tf.pad(out_v, tf.constant([[0, 0], [0, 0], [pad, pad], [0, 0]]))
+    img_pad = tf.pad(out_v, tf.constant([[0, 0], [0, 0], [pad, pad], [0, 0]]))  # [B, H, W+2*pad, C]
     # horizontal 1D filter
     for i in range(k_sz):
         out_h = out_h + img_pad[:, :, i:i + sz[2], :] * tf.tile(Fh[:, :, :, i:k_sz * sf ** 2:k_sz], [1, 1, 1, 3])
