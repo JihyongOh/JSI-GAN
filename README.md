@@ -60,4 +60,4 @@ Our code is implemented using Tensorflow, and was tested under the following set
 Please contact us via email (sooyekim@kaist.ac.kr or jhoh94@kaist.ac.kr) for any problems regarding the released code.
 
 ## License
-The source code is free for research and education use only. Any comercial use should get formal permission first.
+The source code is free for research and education use only. Any commercial use should get formal permission first.
