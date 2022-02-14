@@ -1,4 +1,10 @@
 # JSI-GAN
+
+[![ArXiv](https://img.shields.io/badge/ArXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/1909.04391)
+[![AAAI2020](https://img.shields.io/badge/AAAI2020-Paper-<COLOR>.svg)](https://ojs.aaai.org/index.php/AAAI/article/view/6789)
+[![GitHub Stars](https://img.shields.io/github/stars/JihyongOh/FISR?style=social)](https://github.com/JihyongOh/JSI-GAN)
+![visitors](https://visitor-badge.glitch.me/badge?page_id=JihyongOh/JSI-GAN)
+
 **This is the official repository of JSI-GAN (AAAI2020).**
 
 We provide the training and test code along with the trained weights and the dataset (train+test) used for JSI-GAN.
