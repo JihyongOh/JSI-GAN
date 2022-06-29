@@ -29,14 +29,26 @@ Our code is implemented using Tensorflow, and was tested under the following set
 2. Download the test dataset from [this link](https://drive.google.com/file/d/1dZTwvRhf189L7NLkAcpij4980fyEXq3Q/view?usp=sharing) and unzip the 'test' folder in **\<source_path\>/data**.
 3. Download the pre-trained weights from [this link](https://drive.google.com/drive/folders/1WJLD_wCERHrY3CZty_ThHONB5sMmH-0j?usp=sharing) and place the folders in **\<source_path\>/checkpoint_dir**.
 4. Run **main.py** with the following options in parse_args:  
+
 **(i) For testing the .mat file input with scale factor 2:**  
-'--phase' as **'test_mat'**, '--scale_factor' as **2**, '--test_data_path_LR_SDR' as **'./data/test/testset_SDR_x2.mat'**, '--test_data_path_HR_HDR' as **'./data/test/testset_HDR.mat'**  
+```
+python main.py --phase 'test_mat' --scale_factor 2 --test_data_path_LR_SDR './data/test/testset_SDR_x2.mat' --test_data_path_HR_HDR './data/test/testset_HDR.mat'
+```
+
 **(ii) For testing the .mat file input with scale factor 4:**  
-'--phase' as **'test_mat'**, '--scale_factor' as **4**, '--test_data_path_LR_SDR' as **'./data/test/testset_SDR_x4.mat'**, '--test_data_path_HR_HDR' as **'./data/test/testset_HDR.mat'**  
+```
+python main.py --phase 'test_mat' --scale_factor 4 --test_data_path_LR_SDR './data/test/testset_SDR_x4.mat' --test_data_path_HR_HDR './data/test/testset_HDR.mat'
+```
+
 **(iii) For testing the .png file input with scale factor 2:**  
-'--phase' as **'test_png'**, '--scale_factor' as **2**, '--test_data_path_LR_SDR' as **'./data/test/PNG/SDR_x2'**, '--test_data_path_HR_HDR' as **'./data/test/PNG/HDR'**  
+```
+python main.py --phase 'test_png' --scale_factor 2 --test_data_path_LR_SDR './data/test/testset_SDR_x2.mat' --test_data_path_HR_HDR './data/test/testset_HDR.mat'
+``` 
+
 **(iv) For testing the .mat file input with scale factor 4:**  
-'--phase' as **'test_png'**, '--scale_factor' as **4**, '--test_data_path_LR_SDR' as **'./data/test/PNG/SDR_x4'**, '--test_data_path_HR_HDR' as **'./data/test/PNG/HDR'**  
+```
+python main.py --phase 'test_png' --scale_factor 4 --test_data_path_LR_SDR './data/test/testset_SDR_x4.mat' --test_data_path_HR_HDR './data/test/testset_HDR.mat'
+``` 
 
 ### Description
 * **Running the test_mat option** will read the **.mat** file and save the predicted HR HDR results in .png format in **\<source_path\>/test_img_dir**. The YUV channels are saved separately as 16-bit PNG files.
@@ -52,10 +64,16 @@ Our code is implemented using Tensorflow, and was tested under the following set
 1. Download the source code in a directory of your choice **\<source_path\>**.
 2. Download the train dataset from [this link](https://drive.google.com/file/d/19cp91wSRSrOoEdPeQkfMWisou3gJoh-7/view?usp=sharing) and unzip the 'train' folder in **\<source_path\>/data**.   
 3. Run **main.py** with the following options in parse_args:  
+
 **(i) For training the model with scale factor 2:**  
-'--phase' as **'train'**, '--scale_factor' as **2**, '--train_data_path_LR_SDR' as **'./data/train/SDR_youtube_80.mat'**, '--train_data_path_HR_HDR' as **'./data/train/HDR_youtube_80.mat'**  
+```
+python main.py --phase 'train' --scale_factor 2 --train_data_path_LR_SDR './data/train/SDR_youtube_80.mat' --train_data_path_HR_HDR './data/train/HDR_youtube_80.mat'
+```  
+
 **(ii) For training the model with scale factor 4:**  
-'--phase' as **'train'**, '--scale_factor' as **4**, '--train_data_path_LR_SDR' as **'./data/train/SDR_youtube_80_x4.mat'**, '--train_data_path_HR_HDR' as **'./data/train/HDR_youtube_80.mat'**  
+```
+python main.py --phase 'train' --scale_factor 4 --train_data_path_LR_SDR './data/train/SDR_youtube_80_x4.mat' --train_data_path_HR_HDR './data/train/HDR_youtube_80.mat'
+``` 
 
 ### Description
 * **Running the train option** will train JSI-GAN with the proposed training scheme (**training JSInet first and then fine-tuning JSI-GAN**) and save the trained weights in **\<source_path\>/checkpoint_dir**.
