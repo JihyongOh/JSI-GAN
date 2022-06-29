@@ -11,7 +11,17 @@ We provide the training and test code along with the trained weights and the dat
 If you find this repository useful, please consider citing our [paper](https://arxiv.org/abs/1909.04391).
 
 **Reference**:  
-> Soo Ye Kim*, Jihyong Oh*, and Munchurl Kim "JSI-GAN: GAN-Based Joint Super-Resolution and Inverse Tone-Mapping with Pixel-Wise Task-Specific Filters for UHD HDR Video", *Thirty-Fourth AAAI Conference on Artificial Intelligence*, 2020. (* *equal contribution*)
+> Soo Ye Kim*, Jihyong Oh*, and Munchurl Kim, "JSI-GAN: GAN-Based Joint Super-Resolution and Inverse Tone-Mapping with Pixel-Wise Task-Specific Filters for UHD HDR Video," *AAAI Conference on Artificial Intelligence*, 2020. (* *equal contribution*)
+
+**BibTeX**
+```bibtex
+@inproceedings{kim2020jsigan,
+  title={JSI-GAN: GAN-Based Joint Super-Resolution and Inverse Tone-Mapping with Pixel-Wise Task-Specific Filters for UHD HDR Video},
+  author={Kim, Soo Ye and Oh, Jihyong and Kim, Munchurl},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  year={2020}
+}
+```
 
 ### Requirements
 Our code is implemented using Tensorflow, and was tested under the following setting:  
