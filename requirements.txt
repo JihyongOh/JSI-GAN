@@ -1,5 +1,5 @@
 h5py==2.10.0
 numpy==1.18.1
-tensorflow_gpu==1.13.1
+tensorflow_gpu==2.12.0
 imageio==2.6.1
 Pillow==7.0.0
